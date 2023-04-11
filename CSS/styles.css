@@ -1,0 +1,152 @@
+header img {
+    width: 200px;
+    height: 80px;
+}
+
+.head,
+header {
+    display: flex;
+}
+
+header {
+    text-indent: 70px;
+}
+
+.container {
+    width: 99%;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+}
+
+.con-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 20px;
+}
+
+header h1 {
+    color: orangered;
+    font-size: 30px;
+}
+
+body {
+    background-color: #000c18;
+
+    color: #9966b8;
+    font-size: large;
+    font-family: monospace;
+}
+
+footer {
+    color: black;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+nav ul li:hover {
+    background-color: white;
+    color: cornflowerblue;
+}
+
+nav ul li {
+    background-color: black;
+    margin-left: 27px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: blue;
+    font-weight: bold;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: white;
+    line-height: 40px;
+    display: block;
+}
+
+main {
+    padding: 10px;
+    margin-top: 90px;
+    font-style: italic;
+}
+
+.designs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    column-gap: 15px;
+    row-gap: 15px;
+    margin: 20px;
+}
+
+.items {
+    border: solid #ddbb88 3px;
+    border-radius: 10%;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    font-size: larger;
+}
+
+.items:hover {
+    transform: rotate(360deg);
+}
+
+.discount {
+    text-align: center;
+}
+
+.discount span {
+    background-color: white;
+    color: black;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    animation: dis 0.5s infinite alternate;
+}
+
+@keyframes dis {
+    0% {
+        color: red;
+        background-color: rgb(218, 255, 11);
+    }
+
+    25% {
+        color: blue;
+        background-color: cadetblue;
+        border-radius: 15%;
+    }
+
+    50% {
+        color: chartreuse;
+        background-color: brown;
+    }
+
+    75% {
+        color: crimson;
+        background-color: aqua;
+        border-radius: 15%;
+    }
+
+    100% {
+        color: chocolate;
+        background-color: cornflowerblue;
+    }
+}
